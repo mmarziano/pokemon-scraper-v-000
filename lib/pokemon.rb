@@ -20,8 +20,8 @@ class Pokemon
       id = new_pokemon[0] 
       name = new_pokemon[1]
       type = new_pokemon[2]
-      Pokemon.new(id, name, type)
-      
+      pokemon = Pokemon.new(id, name, type)
+      pokemon
     end 
   
 end
