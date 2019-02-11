@@ -3,7 +3,7 @@ class Pokemon
     
     @@all = []
     
-    def initialize(id:, name:, type:, db:, hp: nil)
+    def initialize(id:, name:, type:, db:, hp:)
       @name = name
       @id = id
       @type = type
