@@ -3,7 +3,7 @@ class Pokemon
     
     @@all = []
     
-    def initialize(id:, name:, type:, db:, hp:)
+    def initialize(id:, name:, type:, db:, hp: nil)
       @name = name
       @id = id
       @type = type
@@ -27,6 +27,5 @@ class Pokemon
   
     def alter_hp(hp, db)
       db.execute("UPDATE pokemon SET hp = ? WHERE id = #{self.id}", hp)
-      binding.pry
     end 
 end
