@@ -27,5 +27,6 @@ class Pokemon
   
     def alter_hp(hp, db)
       db.execute("SELECT * FROM pokemon WHERE name = ?", self)
+      binding.pry
     end 
 end
